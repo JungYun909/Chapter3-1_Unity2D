@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : TopDownCharacterController
 {
+
     private Camera _camera;
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class PlayerInputController : TopDownCharacterController
         // Debug.Log("OnMove" + value.ToString());
         Vector2 moveInput = value.Get<Vector2>().normalized;
         CallMoveEvent(moveInput);
+
     }
 
     public void OnLook(InputValue value)
@@ -32,8 +34,4 @@ public class PlayerInputController : TopDownCharacterController
         }
     }
 
-    public void OnFire(InputValue value)
-    {
-        Debug.Log("OnFire" + value.ToString());
-    }
 }

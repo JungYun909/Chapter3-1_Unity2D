@@ -20,6 +20,7 @@ public class TopDownAimRotation : MonoBehaviour
         _controller.OnLookEvent += OnAim;
     }
 
+
     void OnAim(Vector2 aimDirection)
     {
         Rotate(aimDirection);
