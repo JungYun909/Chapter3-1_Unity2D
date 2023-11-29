@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controllers\TopDownCharacterController.cs" />
     <Compile Include="Assets\Scripts\Entities\TopDownMovement.cs" />
+    <Compile Include="Assets\Scripts\Entities\TopDownAimRotation.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerInputController.cs" />
   </ItemGroup>
   <ItemGroup>
